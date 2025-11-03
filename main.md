@@ -1,6 +1,4 @@
-# Веб Парсер
-#### Автор: Гриценко Г.М.
-![alt text](image.png)
+![[Pasted image 20251013114931.png]]
  > Веб-парсер (web parser) -- инструмент для сбора открытых данных из сети "Интернет". В переводе web - сеть, parse - анализ, т.е. web parsing -- анализ сети.
 
 #### Бытовое использование
@@ -14,11 +12,11 @@
 Давайте перейдём от красивых слов, к практике.
 Есть (n + 1) приложение, которое является веб парсером.
 Здесь приведены примеры таких программ:
-- Import.io
-- Webhose.io
-- Dexi.io
-- Scrapinghub
-- ParseHub
+- [Import.io](https://www.import.io/)
+- [Webhose.io](https://webz.io/)
+- [Dexi.io](https://www.dexi.io/)
+- [Scrapinghub](https://scrapinghub.ru/)
+- [ParseHub](https://www.parsehub.com/)
 
 Если говорить простыми словами, основная функция веб-парсера -- это GET запрос, обработка исключений и удобное представление полученной информации.
 
@@ -49,4 +47,3 @@ print(f"Rendered response:\n{data.text}") # текстовый ответ
 print(f"Raw response:\n{data.content}") # сырой ответ
 ```
 
-Спасибо за внимание!
