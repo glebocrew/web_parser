@@ -22,6 +22,12 @@
 
 Давайте, как истинные матинфы напишем элементарный веб парсер своими руками
 
+Установим библиотеку для запрососв
+```bash
+pip install requests
+```
+
+Напишем небольшой скрипт
 ```python
 from requests import get, RequestException
 from sys import exit as stop
@@ -32,14 +38,14 @@ TIMEOUT = 10 # время ожидания ответа
 
 print(f"Parsing info from {ADDR}")
 try:
-    data = get(
-        ADDR,
-        timeout=TIMEOUT,
-    ) # полуаем дату
+    data = get(
+    ADDR,
+    timeout=TIMEOUT,
+) # полуаем дату
 
 except RequestException as exception: # обработчик ошибок
-    print(f"Parsing data failed! Full exception > {exception}")
-    stop(0) # завершение программы
+    print(f"Parsing data failed! Full exception > {exception}")
+    stop(0) # завершение программы
 
 print("Parsing finished successfully")
 
